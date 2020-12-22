@@ -1,0 +1,40 @@
+$mainBlack: #3d3d3d;
+$mainOrange: #daa520;
+$mainBrown: #413109;
+$mainWhite: rgb(245, 245, 245);
+$pureWhite: #fff;
+$linkBlue: rgb(0, 115, 223);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    @media screen and (min-width: 50em){
+        font-size: 70%;
+    }
+}
+body{
+    font-family: 'Cinzel', serif;
+    overflow-x: hidden;
+    background-color: $mainWhite;
+
+    @media screen and (min-width: 50em){
+        padding-left: 5rem;
+    }
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.section__title{
+    margin: 2rem;
+    font-size: 2.4rem;
+    color: $mainOrange;
+}
+
+@import "./style/nav.scss";
+@import "./style/header.scss";
+@import "./style/about.scss";
+@import "./style/projects.scss";

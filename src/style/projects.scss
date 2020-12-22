@@ -1,0 +1,151 @@
+.projects{
+    text-align: center;
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        width: 80%;
+        margin: 2rem auto;
+        border-radius: 2px;
+        overflow: hidden;
+
+        @media screen and (min-width: 37.5em){
+            width: calc(48% - 3rem);   
+            margin: 2rem;
+            text-align: start;
+            padding: 1rem;
+        }
+        @media screen and (min-width: 57.5em){
+            width: calc(32% - 3rem);   
+        }
+
+        &__img{
+            width: 80%;
+            margin: auto;
+            position: relative;
+
+            @media screen and (min-width: 37.5em){
+                width: 100%;  
+                margin: 0;
+            }
+            img{
+                width:100%;
+            }
+        }
+        &__desktopLinks{
+            display: none;
+            border-radius: 2px;
+
+            .project__link{
+                color: $mainOrange;
+                text-align: center;
+                display: block;
+                transition: color 0.3s, background-color 0.3s;
+
+                &:hover{
+                    background-color: $linkBlue;
+                    color: $mainWhite;
+                }
+            }
+        }
+        &__link{
+            color: $linkBlue;
+            font-size: 1.5rem;
+            text-decoration: none;
+            display: inline-block;
+            padding: 1rem;
+
+            @media screen and (min-width: 50em){
+                font-size: 1.2rem;
+            }
+        }
+
+        &__content{
+            padding: 1.5rem 0;
+        }
+        &__name{
+            font-size: 1.8rem;
+            color: $mainBlack;
+        }
+        &__category{
+            font-size: 1.5rem;
+            color: $mainBrown;
+            font-weight: 800;
+        }
+        &__text{
+            font-size: 1.6rem;
+            margin: 0.8rem 0;
+            color: $mainBlack;
+        }
+        &__mobileLinks{
+            display: block;
+            margin: 1rem 0;
+
+            a{
+                margin-right: 1rem;
+                position: relative;
+                overflow: hidden;
+                transition: color 0.3s 0.3s;
+
+                &:hover{
+                    color: $mainWhite;
+
+                    &::before{
+                        transform: translate(0, -25%);
+                    }
+                }
+            }
+            a::before{
+                content:"";
+                z-index: -1;
+                background-color: $linkBlue;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left:0;
+                transition: transform 0.3s;
+                transform: translateX(-120%);
+            }
+        }
+
+        &__learnmore{
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid $mainBrown;
+            color: $mainBrown;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: color 0.2s 0.2s;
+            overflow: hidden;
+            padding: 0.5rem;
+
+            &:hover{
+                color: white;
+
+                &::before{
+                    transform: translateY(0);
+                }
+            }
+            &::before{
+                content: "";
+                background-color: $mainBrown;
+                width: 100%;
+                position: absolute;
+                height: 100%;
+                left:0; 
+                top:0;           
+                transform: translateY(100%);
+                transition: transform 0.2s;
+                z-index: -1;
+                border-radius: 2px;
+            }
+        }
+    }
+}

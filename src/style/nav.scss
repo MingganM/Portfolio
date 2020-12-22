@@ -1,0 +1,120 @@
+.nav{
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1000;
+    background-color: $mainWhite;
+    box-shadow: 0 5px 5px rgba(128, 128, 128, 0.164);
+
+    &__container{
+        @media screen and (min-width: 50em){
+            display: flex;
+        }
+    }
+    &__general{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+    &__logo{
+        display: block;
+        width: 15rem;
+
+        img{
+            width: 100%;
+        }
+    }
+    &__btn {
+        background-color: transparent;
+        color: $mainBlack;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+
+        @media screen and (min-width: 50em){
+            display: none;
+        }
+
+        &:active, &:focus{
+            outline: none;
+            color: $mainOrange;
+        }
+    }
+    // FOR MOBILE SCREEN
+    &__mobile{
+        height: 0;
+        overflow: hidden;
+        transition: height 0.25s ease-out;
+        font-size: 2rem;
+        background-color: rgba($mainOrange, 0.8);
+        
+        &--li{ 
+            padding: 0 1.5rem;
+            display: flex;
+            transition: background-color 0.3s;
+
+            a{
+                display:block;
+                color: $mainBlack;
+                padding: 2rem 1rem;
+            }
+            .nav__a--text{
+                width: 100%;
+                text-decoration: none;
+            }
+
+            &:hover:not(:last-child){
+                background-color: $mainBlack;
+                a {
+                    color: $mainWhite;
+                }
+            }
+
+            // LINKS
+            .nav__links--mobile{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .nav__a{
+                    margin: 0 1rem;
+                    padding: 1rem;
+                }
+            }
+
+        }
+    }
+    // FOR DESKTOP SCREEN
+    &__desktop{
+        display: none;
+
+        @media screen and (min-width: 50em){
+            order: -1;
+            display: flex;
+            flex-direction: column;
+            background-color: $mainBlack;
+            color: $mainWhite;
+            height:100%;
+            position:fixed;
+            left:0;
+            
+            &--li{
+                font-size: 2rem;
+                margin: 1rem 0;
+                text-align: center;
+            }
+            .nav__a{
+                color: $mainWhite;
+                padding: 1.2rem;
+                
+                &:hover{
+                    color: $mainOrange;
+                }
+            }
+        }
+    }
+}
+.showNav{
+    height: 248px;
+}
