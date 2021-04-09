@@ -1,0 +1,81 @@
+.singleProject{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $pureWhite;
+    height: 100%;
+    box-shadow: 0 0 50px $mainBlack;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    transition: transform 0.6s ease-out;
+    padding: 9rem 2rem;
+
+    @media screen and (min-width: 43.75em){
+        padding: 9rem 4rem;
+    }
+    @media screen and (min-width: 50em){
+        padding: 9rem 8rem;
+    }
+
+    &__btn{
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+        color: $mainBrown;
+        margin-left: auto;
+        cursor: pointer;
+        display: block;
+        transition: 0.3s color;
+
+        &:hover{
+            color: rgb(212, 71, 71);;
+        }
+    }
+    &__content{
+        transition: 0.5s opacity;
+        opacity: 0;
+        font-size: 1.4rem;
+        padding:2rem 1rem;
+    }
+    &__name{
+        font-size: 2rem;
+        color: $mainBlack;
+        margin: 1rem 0;
+    }
+    &__category{
+        color: $mainBrown;
+    }
+    &__about{
+        margin: 1rem 0;
+    }
+    &__link{
+        color: $pureWhite;
+        padding: 0.8rem 1rem;
+        background-color: $linkBlue;
+        text-decoration: none;
+        display: inline-block;
+        margin: 1.5rem 0;
+    }
+    &__ul{
+        margin: 0.5rem 0;
+        list-style-type: none;
+    }
+    &__ul--heading{
+        margin: 0.5rem 0;
+        color: $mainBlack;
+    }
+    &__li{
+        margin: 0.5rem 0;
+    }
+}
+.showProjectDetail {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(3);
+}
+.initialTransform {
+    transform: translate(0) scale(1);
+}
+.initialOpacity {
+    opacity: 1;
+}

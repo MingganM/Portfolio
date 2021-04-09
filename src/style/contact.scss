@@ -1,0 +1,45 @@
+.contact{
+
+    &__svgContainer {
+        svg{
+            margin-bottom: -8px;
+        }
+    }
+    &__content{
+        padding: 2rem 1rem;
+        background-color: $mainOrange;
+    }
+    & .section__title{
+        text-align: center;
+        color: $pureWhite;
+    }
+    &__items{
+        font-size: 1.7rem;
+        margin: 1rem 0;
+        padding: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__items--heading{
+        color: $mainBlack;
+    }
+    &__link{
+        text-decoration: none;
+        color: $linkBlue;
+        font-weight: 700;
+        margin: 0.5rem;
+    }
+    
+    @media screen and (min-width: 43.75em){
+        & .section__title{
+            text-align: start;
+        }
+        &__items{
+            flex-direction: row;
+        }
+        &__items--heading{
+            margin-right: auto;
+        }
+    }
+}

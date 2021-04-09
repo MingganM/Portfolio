@@ -33,12 +33,28 @@ module.exports = {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                  loader: 'babel-loader',
-                  options: {
-                    presets: ['@babel/preset-env']
-                  }
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
                 }
-              }
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: 'images/'
+                        }
+                    },
+                ],
+            },
+            {
+                test: /\.html$/i,
+                use: ["html-loader"]
+            },
         ]
     }
 }

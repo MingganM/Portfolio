@@ -107,6 +107,7 @@
             .nav__a{
                 color: $mainWhite;
                 padding: 1.2rem;
+                transition: 0.3s color;
                 
                 &:hover{
                     color: $mainOrange;
