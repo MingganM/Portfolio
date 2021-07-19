@@ -42,4 +42,9 @@
             margin-right: auto;
         }
     }
+    @media screen and (min-width: 125em){
+        position: absolute;
+        width: 100%;           
+        left: 94px;
+    }
 }

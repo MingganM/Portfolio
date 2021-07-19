@@ -44,6 +44,12 @@ p{
     font-size: 2.4rem;
     color: $mainOrange;
 }
+.page{
+    @media screen and (min-width: 125em){
+        max-width: 2000px;
+        margin: auto;
+    }
+}
 
 @import "./style/nav.scss";
 @import "./style/header.scss";

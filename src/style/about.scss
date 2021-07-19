@@ -2,53 +2,44 @@
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    @media screen and (min-width:50em){ //over 800px
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
+    @media screen and (min-width:37.5em){
+        flex-direction: row;
     }
 
-    &__img{
-        width: 60%;
-        @media screen and (min-width:50em){
-            width: 30%;
-        }
-        margin: 2rem auto;
-        position: relative;
-        
-        img{
-            width: 100%;
-        }
+    .info:nth-child(2){
+        border-color: $mainOrange;
 
-        &::before {
-            z-index: -1;
-            content: "";
-            transform: translate(10%, 5%);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: rgba($mainBlack, 0.5);
+        &__title{
+            color: $mainOrange;
         }
     }
-
-    &__content{
-        @media screen and (min-width:50em){
-            width: 50%;
-            text-align: start;
-        }
-        text-align: center;
-        padding:2rem;
-        margin: 2rem 1rem;
-    }
-    &__title{
-        font-size: 2rem;
-        color: $mainOrange;
-    }
-    &__text{
-        text-align: justify;
+    .info{
+        border: 4px solid $mainBlack;
+        flex: 0 0 32%;
+        margin: 0.5rem;
+        border-radius: 8px;
         font-size: 1.4rem;
-        margin: 1rem 0;
-        color: $mainBlack;
+        // text-transform: capitalize;
+        padding: 1rem;
+
+        & > *{
+            margin: 1rem 0.5rem;
+        }
+        &__title{
+            text-align: center;
+            color: $mainBlack;
+        }
+        &__text{
+            
+        }
+        &__ul{
+            
+            margin-left: 2rem;
+        }
+        &__li{
+
+        }
     }
 }
