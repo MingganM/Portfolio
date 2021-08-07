@@ -108,9 +108,27 @@
                 color: $mainWhite;
                 padding: 1.2rem;
                 transition: 0.3s color;
-                
+                position: relative;
+
                 &:hover{
                     color: $mainOrange;
+                }
+                &:hover > span{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &--info{
+                    font-weight: 600;
+                    position: absolute;
+                    font-size: 1.5rem;
+                    background-color: $mainBlack;
+                    white-space: nowrap;
+                    margin-left: 20px;
+                    border-radius: 4px;
+                    padding: 0.4rem 0.6rem;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.2s opacity, visibility 0.2s;
                 }
             }
         }

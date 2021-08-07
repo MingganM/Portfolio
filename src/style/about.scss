@@ -1,5 +1,5 @@
 .about{
-    padding: 5rem 0;
+    padding: 8rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,7 @@
 
     .info:nth-child(2){
         border-color: $mainOrange;
+        background-color: $mainOrange;
 
         &__title{
             color: $mainOrange;
@@ -21,15 +22,16 @@
         margin: 0.5rem;
         border-radius: 8px;
         font-size: 1.4rem;
-        // text-transform: capitalize;
         padding: 1rem;
+        background-color: $mainBlack;
+        box-shadow: 0 10px 10px rgb(175, 175, 175);
 
         & > *{
             margin: 1rem 0.5rem;
+            color: $mainWhite;
         }
         &__title{
             text-align: center;
-            color: $mainBlack;
         }
         &__text{
             
