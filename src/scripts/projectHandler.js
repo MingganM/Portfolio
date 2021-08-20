@@ -10,7 +10,7 @@ function updateSingleProject(projectname){
     let singleProjectHtml = `
         <div class="singleProject__content">
             <button class="singleProject__btn">
-                <i class="fas fa-times"></i>
+                X
             </button>
             
             <h2 class="singleProject__name">${selectedProject.name}</h2>

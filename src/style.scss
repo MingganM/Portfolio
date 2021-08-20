@@ -10,6 +10,11 @@ $linkBlue: rgb(0, 115, 223);
     padding: 0;
     box-sizing: border-box;
 }
+.icon{
+    height: 2.3rem;
+    width: 2.3rem;
+    fill: $mainBlack;
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;

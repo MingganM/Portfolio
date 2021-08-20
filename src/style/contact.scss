@@ -29,6 +29,12 @@
         color: $linkBlue;
         font-weight: 700;
         margin: 0.5rem;
+
+        & .icon{
+            fill: $linkBlue;
+            height: 1.6rem;
+            width: 1.6rem;
+        }
     }
     
     @media screen and (min-width: 43.75em){

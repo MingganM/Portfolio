@@ -38,7 +38,9 @@
 
         &:active, &:focus{
             outline: none;
-            color: $mainOrange;
+            & .icon{
+                fill: $mainOrange;
+            }
         }
     }
     // FOR MOBILE SCREEN
@@ -69,6 +71,9 @@
                 a {
                     color: $mainWhite;
                 }
+                svg {
+                    fill: $mainWhite;
+                }
             }
 
             // LINKS
@@ -98,6 +103,7 @@
             height:100%;
             position:fixed;
             left:0;
+            padding: 0.1rem;
             
             &--li{
                 font-size: 2rem;
@@ -110,8 +116,14 @@
                 transition: 0.3s color;
                 position: relative;
 
+                & svg{
+                    fill: $mainWhite;
+                }
                 &:hover{
                     color: $mainOrange;
+                    & svg{
+                        fill: $mainOrange;
+                    }
                 }
                 &:hover > span{
                     opacity: 1;
@@ -135,5 +147,5 @@
     }
 }
 .showNav{
-    height: 248px;
+    height: 260px;
 }
