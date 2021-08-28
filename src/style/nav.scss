@@ -25,16 +25,17 @@
             width: 100%;
         }
     }
+    @media screen and (min-width: 50em){
+        &__btn, &__mobile{
+            display: none;
+        }
+    }
     &__btn {
         background-color: transparent;
         color: $mainBlack;
         border: none;
         font-size: 2rem;
         cursor: pointer;
-
-        @media screen and (min-width: 50em){
-            display: none;
-        }
 
         &:active, &:focus{
             outline: none;

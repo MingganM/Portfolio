@@ -15,7 +15,7 @@ const projects = [
         projectCode: "https://github.com/MingganM/PCShop",
         img: "./images/pcshop.jpg",
         about: "Made with React, PC SHOP is an imaginary Ecommerce website that sells computer parts. It has Home, Products, Cart and Get Started sections. It is responsive and fast. It uses smaller versions of product images normally and large version of image in single product section, making the website load faster. It has filters that sort items by price: low to high or high to low.",
-        toolsUsed: ["HTML", "CSS", "React", "Cotext API"]
+        toolsUsed: ["HTML", "CSS", "JavaScript", "React", "Cotext API"]
     },
     {
         name: "Web Builder",
@@ -24,7 +24,7 @@ const projects = [
         projectCode: "https://github.com/MingganM/webbuilder",
         img: "./images/webbuilder.jpg",
         about: "A GUI for HTML and CSS. Uses React's virtual DOM to maximize the performance. Easy enough to understand at the first glance and it can produce code for HTML and CSS. The rest is explained in the Docs section.",
-        toolsUsed: ["HTML", "SCSS", "React", "Context API"]
+        toolsUsed: ["HTML", "SCSS", "JavaScript", "React", "Context API"]
     },
     {
         name: "Dota 2 Infos",
