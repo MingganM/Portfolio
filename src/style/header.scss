@@ -74,7 +74,9 @@
 
     }
     &__svg{
-        width: 500px;
+        @media screen and (min-width: 50em){
+            width: 500px;
+        }
 
         img{
             width: 90%;
