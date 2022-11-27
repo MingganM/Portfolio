@@ -41,34 +41,12 @@
         margin: 1rem 0;
         position: relative;
         border-radius: 2px;
-        transition: background-color 0.3s 0.3s, color 0.3s 0.3s;
+        transition: background-color 0.3s, color 0.3s;
 
-        @media screen and (min-width: 50em){
-            &::after, &::before{
-                content:"";
-                position: absolute;
-                width: 75%;
-                height: 50%;
-                top:-25%;
-                left: 50%;
-                background-color: $mainWhite;
-                transition: transform 0.3s;
-            }
-            &::before{
-                top: 75%;
-                left: -25%;
-            }
-            
+        @media screen and (min-width: 50em){     
             &:hover{
                 background-color: $mainBrown;
                 color: $mainWhite;
-
-                &:before{
-                    transform: translateX(-100%);
-                }
-                &::after{
-                    transform: translateX(100%);
-                }
             }
         }
 
