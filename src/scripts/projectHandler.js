@@ -46,6 +46,7 @@ function handleLearnMoreBtn(e){
     singleProject.style.left = targetRect.left + "px";
     
     singleProject.classList.add('showProjectDetail');
+    document.body.style.overflow = "hidden";
     setTimeout(setSingleProject, 500);
 }
 function setSingleProject(){
@@ -59,5 +60,6 @@ function setSingleProject(){
     singleProjectBtn.addEventListener('click', function(){
         singleProject.className = "singleProject";
         singleProjectContent.className = "singleProject__content";
+        document.body.style.overflow = "scroll";
     })
 }
